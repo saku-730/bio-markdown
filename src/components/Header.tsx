@@ -7,7 +7,6 @@ export default function Header() {
         <Link href="/">トップ</Link>
         {/* ↓ 本来は posts/ ディレクトリから動的にリンクを生成するのだ */}
         <Link href="/posts/first-post">記事1</Link>
-        <Link href="/posts/second-post">記事2</Link>
       </nav>
     </header>
   );

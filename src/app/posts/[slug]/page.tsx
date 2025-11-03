@@ -12,8 +12,8 @@ export async function generateStaticParams() {
 
 // 2. ページコンポーネント
 export default async function PostPage({ params }: { params: { slug: string } }) {
-  console.log("--- ここまでセーフ---");
-  const { content, headings } = await getPostData(params.slug);
+  const page = await params;
+  const { content, headings } = await getPostData(page.slug);
 
   return (
     <div style={{ display: 'flex', gap: '20px' }}>

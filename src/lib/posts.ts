@@ -11,7 +11,6 @@ export function getAllPostSlugs() {
   
   const mdFileNames = fileNames.filter((fileName) => fileName.endsWith('.md'));
 
-  // [ { slug: 'first-post' }, { slug: 'second-post' } ]
   return mdFileNames.map((fileName) => {
     return {
       slug: fileName.replace(/\.md$/, ''),
