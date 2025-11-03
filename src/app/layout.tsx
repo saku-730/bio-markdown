@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Header from '@/components/Header';
 
 export const metadata: Metadata = {
-  title: 'マークダウンサイトなのだ',
+  title: 'mathmatical biology',
 };
 
 export default function RootLayout({

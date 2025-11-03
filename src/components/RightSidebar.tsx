@@ -1,4 +1,4 @@
-import type { Heading } from '@/lib/posts'; // (F)で定義した型
+import type { Heading } from '@/lib/posts';
 
 type Props = {
   headings: Heading[];
@@ -6,7 +6,7 @@ type Props = {
 
 export default function RightSidebar({ headings }: Props) {
   if (headings.length === 0) {
-    return <aside style={{ minWidth: '200px' }}>目次がないのだ</aside>;
+    return <aside style={{ minWidth: '200px' }}>No index</aside>;
   }
 
   return (

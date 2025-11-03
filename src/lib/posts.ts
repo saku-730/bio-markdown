@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-// 'posts' ディレクトリのパス
 const postsDirectory = path.join(process.cwd(), 'posts');
 
 // すべての投稿のスラッグ（ファイル名）を取得
